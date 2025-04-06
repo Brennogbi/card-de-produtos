@@ -11,12 +11,13 @@ body{
     padding: 20px;
     display: flex;
     justify-content: center;
+    gap: 30;
 
 }
 .product-card{
-
-    background-color: white;
-    width: 300px;
+   
+    background-color: rgb(255, 254, 254);
+    width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0 0 0 0.1);
     overflow: hidden;
@@ -26,7 +27,7 @@ body{
 
 /* efeito  ao passar o mouse*/
 .product-card:hover{
-
+     
     transform: translatey(-5px);
 }
 
@@ -38,13 +39,25 @@ body{
     width: 100%;
     height: auto;
     display: block;
+    transition: transform 0.3s;
+   
 }
+img:hover{
+    transform: translatey(-5px)
+}
+
+
 
 /* informacoes do produto*/
 
 .product-info{
 
-    padding: 15px;
+    
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px ;
+  gap: 10px;
+ 
+  justify-content: center;
 }
 
 .product-name{
@@ -57,7 +70,7 @@ body{
 /* botão*/
 
 .add-to-cart{
-    background-color: #007bff;
+    background-color: #0a0a0a;
     color: white;
     padding: 10px;
     border: none;
@@ -70,14 +83,48 @@ body{
 
 .add-to-cart:hover{
 
-    background-color: #0056b3;
+    background-color: #3b3b3b;
+    color: red;
 
 }
 
-.mensage{
-    font-size: 20px;
-    color: rgb(255, 47, 47);
-    display: flex;
-    justify-content: center;
-}
+.mensage {
+    margin-top: 20px;
+    padding: 10px;
+    
+    color: #155724;
+  
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+  }
+
+
+  .carrinho-cotainer{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    font-size: 30px;
+  }
+
+  #contador-carrinho{
+
+    position: absolute;
+    top: -8px;
+    color: red;
+    font-size: 12px;
+    padding: 2px 6px;
+    font-weight: bold;
+    
+  }
+
+  #valor-total{
+
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+
+  }
+  
 
