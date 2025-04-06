@@ -43,7 +43,7 @@ body{
    
 }
 img:hover{
-    transform: translatey(-5px)
+    transform: translatey(-10px)
 }
 
 
@@ -128,3 +128,60 @@ img:hover{
   }
   
 
+#valor-total{
+    color: red;
+}
+
+
+
+
+
+
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    .product-name {
+      font-size: 16px;
+    }
+  
+    .price {
+      font-size: 14px;
+    }
+  
+    .add-to-cart {
+      padding: 6px 10px;
+      font-size: 14px;
+    }
+  
+    #valor-total {
+      font-size: 14px;
+    }
+  
+    .carrinho-container {
+      font-size: 20px;
+    }
+
+
+    .product-info{
+        display: grid;
+        grid-template-columns: 200px  ;
+        
+      
+        }
+        .carrinho-cotainer{
+          position: absolute;
+          top: 2px;
+          right: 0;
+          font-size: 30px;
+        }
+
+
+
+
+  }
+
+  
